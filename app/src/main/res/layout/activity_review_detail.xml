@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameDetail">
+
+    <!--
+    Layout ini tidak dipakai. Untuk Single Post view,
+    tolong lihat GameDetail.kt dan activity_game_detail.xml
+
+    perhatikan id dari elemen layout
+    untuk file yang tidak dipakai, ditambah 'xx' di awalan id
+    -->
+
+    <ImageView
+        android:id="@+id/xxiv_game"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/xximg_profil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            app:srcCompat="@drawable/ic_account" />
+
+        <TextView
+            android:id="@+id/xxtv_name"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ahmad M"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/xxlikeProfil"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_like_pink" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xxtv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"
+        android:text="FF MAX HADIR"/>
+
+    <TextView
+        android:id="@+id/xxtv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
